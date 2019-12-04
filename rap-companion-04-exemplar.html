@@ -4375,9 +4375,9 @@ The <code>GVA_by_sector_2016</code> provides test data to work with during devel
 <pre class="r"><code>dplyr::glimpse(GVA_by_sector_2016)</code></pre>
 <pre><code>## Observations: 54
 ## Variables: 3
-## $ sector &lt;fct&gt; creative, culture, digital, gambling, sport, telecoms, to…
-## $ year   &lt;int&gt; 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2011, 2011, 201…
-## $ GVA    &lt;dbl&gt; 65188, 20291, 97303, 8407, 7016, 24738, 49150, 69398, 209…</code></pre>
+## $ sector &lt;fct&gt; creative, culture, digital, gambling, sport, telecoms, tourism, creative…
+## $ year   &lt;int&gt; 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2011, 2011, 2011, 2011, 2011, …
+## $ GVA    &lt;dbl&gt; 65188, 20291, 97303, 8407, 7016, 24738, 49150, 69398, 20954, 102966, 926…</code></pre>
 <pre class="r"><code>x &lt;- GVA_by_sector_2016</code></pre>
 <h4 id="automating-qa" class="govuk-heading-s">Automating QA</h4>
 <p class="govuk-body">
@@ -4387,37 +4387,37 @@ Human’s are not particularly good at Quality Assurance (QA), especially when w
 The author uses messages to tell us what checks are being conducted or we can look at the body of the function if we are interested. This is useful if you are considering developing your own package, it will help you struture the message which are useful for the user.
 </p>
 <pre class="r"><code>gva &lt;- year_sector_data(GVA_by_sector_2016)</code></pre>
-<pre><code>## Warning: `assert_` is deprecated and will eventually be removed from
-## assertr. Please use `assert` instead.
+<pre><code>## Warning: `assert_` is deprecated and will eventually be removed from assertr. Please use
+## `assert` instead.
 
-## Warning: `assert_` is deprecated and will eventually be removed from
-## assertr. Please use `assert` instead.</code></pre>
-<pre><code>## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `assert_` is deprecated and will eventually be removed from assertr. Please use
+## `assert` instead.</code></pre>
+<pre><code>## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.
 
-## Warning: `insist_` is deprecated and will eventually be removed from
-## assertr. Please use `insist` instead.</code></pre>
+## Warning: `insist_` is deprecated and will eventually be removed from assertr. Please use
+## `insist` instead.</code></pre>
 <pre><code>## Checks completed successfully:
 ## object of 'year_sector_data' class produced!</code></pre>
 <p class="govuk-body">
@@ -4525,9 +4525,9 @@ The input, which is likely a bunch of <a href="https://cran.r-project.org/web/pa
 <pre class="r"><code>dplyr::glimpse(GVA_by_sector_2016)</code></pre>
 <pre><code>## Observations: 54
 ## Variables: 3
-## $ sector &lt;fct&gt; creative, culture, digital, gambling, sport, telecoms, to…
-## $ year   &lt;int&gt; 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2011, 2011, 201…
-## $ GVA    &lt;dbl&gt; 65188, 20291, 97303, 8407, 7016, 24738, 49150, 69398, 209…</code></pre>
+## $ sector &lt;fct&gt; creative, culture, digital, gambling, sport, telecoms, tourism, creative…
+## $ year   &lt;int&gt; 2010, 2010, 2010, 2010, 2010, 2010, 2010, 2011, 2011, 2011, 2011, 2011, …
+## $ GVA    &lt;dbl&gt; 65188, 20291, 97303, 8407, 7016, 24738, 49150, 69398, 20954, 102966, 926…</code></pre>
 <h4 id="the-r-output" class="govuk-heading-s">The R output</h4>
 <div class="govuk-inset-text">
 <p class="govuk-body">

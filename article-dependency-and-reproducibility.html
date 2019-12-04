@@ -4117,7 +4117,7 @@ Discuss this page on <a href="https://github.com/ukgovdatascience/rap-website/is
 <p class="govuk-body">
 Most statistical publications are <a href="https://www.gov.uk/government/statistics/announcements" class="govuk-link">updated on a scheduled basis</a> when new data becomes available. Usually the code will run perfectly, but sometimes it will break. The code didn’t change, so what went wrong?
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 The data changed
 </li>
@@ -4135,7 +4135,7 @@ This article is about coping with changes to other people’s code, and writing 
 <p class="govuk-body">
 Three groups of people will use your code:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 The present day you
 </li>
@@ -4165,7 +4165,7 @@ When you use other people’s code, their code is called a “dependency”. It 
 <p class="govuk-body">
 You can mitigate the risks of having dependencies if you
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 notice problems with dependencies
 </li>
@@ -4189,7 +4189,7 @@ Changes to dependencies might not impact your publication. If changes do have an
 <p class="govuk-body">
 Here are some ways your code can be affected.
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 A dependency might have a new bug
 </li>
@@ -4207,7 +4207,7 @@ Problems can be compounded if your dependencies depend on other dependencies, or
 <p class="govuk-body">
 You are likely to make use of other people’s code when you develop your RAP project. Maybe you’ve imported packages to perform a statistical test, for example. These dependencies can be extremely helpful. They can:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 prevent you from recreating code that already exists
 </li>
@@ -4235,7 +4235,7 @@ Lightweight is the right weight
 <p class="govuk-body">
 To achieve this you could:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 minimise the number of dependencies and remove redundancy where possible
 </li>
@@ -4259,7 +4259,7 @@ It isn’t enough to merely minimise your dependencies. You need to think about 
 <p class="govuk-body">
 Set aside time to learn about changes to dependencies and new developments relevant to your project.
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 Subscribe to alerts. This is easy to do if the dependency is hosted on GitHub or a package distribution network like CRAN or PyPi.
 </li>
@@ -4305,7 +4305,7 @@ You can save this information with something like <code>pip freeze &gt; requirem
 <p class="govuk-body">
 But simply saving this information in your project folder isn’t good dependency control. It:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 would be tedious for analysts to read these reports and download each recorded package version one-by-one
 </li>
@@ -4366,7 +4366,7 @@ In R, it is possible to manage your packages without a centralised organisationa
 <p class="govuk-body">
 The approach renv takes to package updates is:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 Isolate a project
 </li>
@@ -4426,7 +4426,7 @@ This will download the packages one by one into the virtual environment in their
 <p class="govuk-body">
 Good package management deals with one of the major problems of dependency hell. But the problem is bigger. Collaborators could still encounter errors if they:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 try to run your code in a later version of the language you used during development
 </li>
@@ -4443,7 +4443,7 @@ What you really want to do is create a virtual computer inside your computer –
 <p class="govuk-body">
 Imagine one of those ubiquitous <a href="https://en.wikipedia.org/wiki/Intermodal_container" class="govuk-link">shipping containers</a>. They are:
 </p>
-<ul class="govuk=list govuk-list--bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
 capable of holding different cargo
 </li>
